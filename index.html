@@ -8,42 +8,169 @@
   <body>
     <header class="heder-index">
       <a class="logo-device" href="#" visually-hidden>Логотип
-      <img class="navigation-logo" src="№" width="" height="" alt="логотип дивайс">
+      <img class="navigation-logo" src="№" width="" height="" alt="логотип девайс">
     </a>
       <nav class="navigation">
-        <ul class="user-list"></ul>
-      <li class="user-item">
          <form class="search-form" action="#" method="get">
         <label class="search">
         <input class="search-input" type="text" placeholder="Поиск по сайту">
         </label>
-      </li>
-      <li class="user-item">
         <button class="button search-button " type="submit">Найти</button>
        </form>
-      </li>
+      <ul class="user-list">
        <li class="user-item">
-        <button class="button log-in-button " type="submit">Войти</button>
+        <a class="login-link" href="#" >Войти</a>
       </li>
+      <li class="user-item">
+        <a class="user-link" href="#">Сравнить</a>
+      </li>
+      <li class="user-item">
+        <a class="user-link" href="#">Корзина</a>
+      </li>
+    </ul>
       <ul class="navigation-list">
         <li class="navigation-item">
-
+          <a class="navigation-link" href="#">Доставка</a>
         </li>
         <li class="navigation-item">
-
+          <a class="navigation-link" href="#">Гарантия</a>
         </li>
         <li class="navigation-item">
-
+          <a class="navigation-link" href="#">Контакты</a>
         </li>
-        <li class="navigation-item">
-
-        </li>
-
       </ul>
       </nav>
-
     </header>
    <main class="main-index">
+    <section class="hero">
+      <h1 class="main-title" vissualy-hidden>Интернет магазин девайс </h1>
+    <section class="slider">
+      <a class="slider-link-image" href="#" >
+        <h2 class="slider-card-title" visually-hidden >квадрокоптер</h2>
+        <img class="slider-image" src="#" width="" height="" alt="квадрокоптер">
+      </a>
+      <button class="slider-button slider-prev" type="button">
+        <span class="visually-hidden">Предыдущее товар</span>
+      </button>
+      <button class="slider-button slider-next" type="button">
+        <span class="visually-hidden">Следующее фото</span>
+      </button>
+    <b class="slider-promo"> Поржает как бабочка, жалит как пчела</b>
+    <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+    </p>
+    <a class="adout  button"  href="#">Подробнее</a>
+    <!--можно ли в таблице использовать span и b?-->
+    <table class="item-info">
+      <tr class="item-info">
+        <td>800 м </td>
+        <td>50 м </td>
+      </tr>
+      <tr class="item-info">
+        <td>дальность полета</td>
+        <td>радиус поражения</td>
+      </tr>
+  </table>
+  <ol class="slider-pagination">
+    <li class="slider-pagination-item">
+      <button class="slider-pagination-button slider-pagination-button-current" type="button">
+        <span class="visually-hidden">1 товар</span>
+      </button>
+    </li>
+    <li class="slider-pagination-item">
+      <button class="slider-pagination-button" type="button">
+        <span class="visually-hidden">2 тофар</span>
+      </button>
+    </li>
+    <li class="slider-pagination-item">
+      <button class="slider-pagination-button" type="button">
+        <span class="visually-hidden">3 товар</span>
+      </button>
+    </li>
+  </ol>
+    </section>
+    <section class="product-catalog">
+      <Ul class="product-list">
+        <li class="product-item">
+          <img class="product-image" src="#" width="" height="" alt="">
+            <P>Виртуальная реальность</P>
+        </li>
+        <li class="product-item">
+          <img class="product-image" src="#" width="" height="" alt="">
+            <P>Моноподы для селфи</P>
+        </li>
+        <li class="product-item">
+          <img class="product-image" src="#" width="" height="" alt="">
+            <P>Экшн-камеры</P>
+        </li>
+        <li class="product-item">
+          <img class="product-image" src="#" width="" height="" alt="">
+            <P>Фитнес-браслеты</P>
+        </li>
+        <li class="product-item">
+          <img class="product-image" src="#" width="" height="" alt="">
+            <P>Умные часы</P>
+        </li>
+        <li class="product-item">
+          <img class="product-image" src="#" width="" height="" alt="">
+            <P>Квадрокоптеры</P>
+        </li>
+      </Ul>
+    </section>
+  </section>
+  <section class="services">
+    <ul class="services-list">
+      <li class="services-item"> Доставка</li>
+      <li class="services-item">Гарантия </li>
+      <li class="services-item"> Кредит</li>
+    </ul>
+    <b class="delivery">доставка </b>
+    <p class="">Мы с удовольствием доставим ваш товар прямо
+      к вашему подъезду совершенно бесплатно! Ведь
+      мы неплохо заработаем, поднимая его на ваш этаж.</p>
+  </section>
+  <article class="exclusive">
+    <a class="exclusive-link" href="#"> Доставим редкий товар под заказ</a>
+  </article>
+  <section class="about-us">
+    <h2 class="about-us-title">о нас</h2>
+    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+    </p>
+    <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+    <ul class="">
+      <li class="">Меловые линии</li>
+      <li class="">СДИК</li>
+      <li class="">ТоксБерри</li>
+    </ul>
+    <a class="button" href="#">подробнее о нас </a>
+  </section>
+  <section class="contacts">
+    <h2 class="contacts-title">Контакты</h2>
+    <p class="">Вы можете забрать товар сами, заехав в наш офис.
+      Заодно сможете проверить работоспособность покупки. </p>
+      <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
+        <address class="contacts-address">
+          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <a class="contacts-phone" href="tel:+78005558628">+7 (812) 812-12-12</a>
+        </address>
+        <h3 class="contacts-subtitle">Время работы</h3>
+        <ul class="contacts-schedule">
+          <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+          <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+        </ul>
+        <a class="button" href="#">напишите нам </a>
+  </section>
+  <section class="subscribe">
+  <b class="subscribe-action">Подпишитесь на рассылку</b>
+  <p class="subscribe-info">Еженедельный дайджест с обзорами новинок,
+    длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+  <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
+    <label class="subscribe">
+    <input class="subscribe-input" type="email" placeholder="Ваш e-mail">
+    </label>
+    <button class="button subscribe-button " type="submit">Подписаться</button>
+   </form>
+  </section>
+
 
    </main>
 
