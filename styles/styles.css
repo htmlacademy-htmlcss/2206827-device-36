@@ -85,6 +85,7 @@ body {
 .slider-description {
   font-size: 16px;
   line-height: 30px;
+  color: rgba(68, 68, 68, 1);
 }
 .item-info th {
   font-size: 36px;
@@ -94,6 +95,7 @@ body {
 .item-info td {
   font-size: 16px;
   line-height: 30px;
+  color: rgba(68, 68, 68, 1);
 }
 .product-catalog {
   font-family:"Raleway", sans-serif;
@@ -112,11 +114,32 @@ body {
   margin: 0;
 
 }
+.delivery {
+  color: rgba(68, 68, 68, 1);
+}
 .delivery-list {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+}
+.about-us p {
+  color: rgba(68, 68, 68, 1);
+}
+.contacts p {
+  color: rgba(68, 68, 68, 1);
+}
+/* не убирается наклон адреса*/
+.contacts-address-main, .contacts-phone-main {
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  color: rgba(68, 68, 68, 1);
+}
+
+.contacts-schedule-item {
+  color: rgba(68, 68, 68, 1);
+
 }
 .contacts-subtitle {
   font-family: "Rubik", sans-serif;
@@ -132,6 +155,27 @@ body {
   line-height: 50px;
   margin: 0;
 }
+.subscribe p {
+  color: rgba(68, 68, 68, 1);
+}
+.check-box {
+  color: rgba(68, 68, 68, 1);
+}
+.footer {
+  background-color: #444444;
+  color: rgba(255, 255, 255, 1);
+
+}
+.address,.contacts-phone-link {
+  font-size: 16px;
+line-height: 20px;
+font-style: normal;
+color: rgba(255, 255, 255, 1);
+}
+.services-footer-link {
+  color: rgba(255, 255, 255, 1);
+}
+
 .button {
   font-family:"Raleway", sans-serif;
   font-style: normal;
@@ -140,10 +184,7 @@ body {
   line-height: 21.13px;
   text-transform:uppercase;
 }
-.contacts-address, .contacts-phone {
-  font-size: 16px;
-  line-height: 20px
-}
+
 /* catalog*/
 .catalog-main {
   width: 100%;
