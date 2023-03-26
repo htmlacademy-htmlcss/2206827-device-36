@@ -83,6 +83,63 @@ body {
   padding: 0;
   flex-grow: 1;
 }
+.slider-image {
+  display: block;
+}
+.slider-button {
+  width: 20px;
+  height: 60px;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  background-image: url("../images/slide-next.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-prev {
+  transform: rotate(180deg);
+}
+.slider-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.slider-pagination-item {
+  margin: 0 20px;
+}
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-pagination-button:hover {
+  background-color: #E5E5E5;
+}
+/*пока скрою
+.slider-pagination-button:focus {
+  border-radius: 0;
+  border: 2px solid #AF4FFF;
+  background-color: #FFFFFF;
+  outline: none;
+
+}
+.slider-pagination-button:active {
+  opacity: 0.3;
+}
+*/
+.button-current {
+  background-color: #242424;
+}
 
 .slider-promo {
   font-family:"Raleway", sans-serif;
@@ -124,6 +181,10 @@ body {
   margin: 0;
 
 }
+.info {
+  color: rgba(68, 68, 68, 1);
+}
+
 .services {
   background-color: #F0F0F0;;
 }
@@ -140,13 +201,6 @@ body {
   background-color: #F0F0F0;
   color: inherit;
   text-decoration: none;
-
-}
-.about-us p {
-  color: rgba(68, 68, 68, 1);
-}
-.contacts p {
-  color: rgba(68, 68, 68, 1);
 }
 
 .contacts-address-main, .contacts-phone-main {
@@ -180,9 +234,6 @@ body {
   line-height: 50px;
   margin: 0;
 }
-.subscribe p {
-  color: rgba(68, 68, 68, 1);
-}
 .check-box {
   color: rgba(68, 68, 68, 1);
 }
@@ -208,6 +259,10 @@ color: rgba(255, 255, 255, 1);
   line-height: 21.13px;
   text-transform:uppercase;
 }
+.button-yellow {
+  color: #FFE17F;
+  background-color: #000000;
+}
 
 /* catalog*/
 .catalog-main {
@@ -215,14 +270,6 @@ color: rgba(255, 255, 255, 1);
   max-width: 1160px;
   margin: 0 auto;
   padding: 0;
-}
-.main-container-inner {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  flex-grow: 1;
-  background-color: #F0F0F0;
-
 }
 .catalog-main-tittle {
   font-family:"Raleway", sans-serif;
@@ -257,7 +304,11 @@ color: rgba(255, 255, 255, 1);
 }
 .products-wrapper {
   background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+
 }
+
 .product-card {
   background-color: rgba(217, 217, 217, 1);
 }
