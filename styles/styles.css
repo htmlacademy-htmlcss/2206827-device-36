@@ -24,22 +24,6 @@ html {
   box-sizing: border-box;
   height: 100%;
 }
-
-body {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #000000;
-  background-color: #FFFFFF;
-  margin: 0 auto;
-  padding:0 140px;
-  height: 100%;
-
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -52,45 +36,63 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #FFFFFF;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
 /*index-header*/
 .header-index {
   position: relative;
-  text-align: center;
-  width: 1040px;
+  width: 1160px;
   height: 300px;
-  padding: 0 60px 134px 60px;
-  margin: 0 auto ;
-  background-color: #FFE17F;
-  top: 40px;
+  margin:0 auto;
+  background-color: transparent;
+
 }
-
-.logo-device {
+.header-index::before {
   position: absolute;
-  left: 60px;
-  top: -20px;
+  content: "";
+  margin-top: -40px;
+  background-color: #FFE17F;
 
+}
+.container-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px;
+  margin: 0;
+  margin-top: 0px;
+  outline: 2px solid red;
+
+}
+.logo-device {
+  display: inline-block;
 }
 .navigation {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-
+  outline: 2px solid blue;
 }
-
 .navigation-wrapper {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+  width: 1040px;
   margin: 0;
   padding: 0;
 }
-.search-form {
-  box-sizing: border-box;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
 .search-input {
   border-style: none;
   width: 357px;
@@ -99,33 +101,38 @@ body {
   border: 2px solid #000000;
   color: #000000;
   border-radius: 50px 0 0 50px;
-  margin: 46px 0 45px 0;
-  background-color: #FFE17F;
+  margin: 0;
  }
-
-.log-in {
+ .log-in {
   text-decoration: none;
   color: inherit;
   width: 54px;
   height: 30px;
-  margin: 46px 26px 35px 26px;
-  padding: 0 150px 0 27px;
+  margin: 0;
+  padding: 0 ;
 }
-
 .user-list {
   width: 240px;
   height: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation-sub-wrapper {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 46px 0 35px auto;
+  align-content: center;
+  width: 1040px;
+}
+.user-list {
+  display: flex;
+  margin: 0;
   padding: 0;
 }
 .user-item {
   width: 105px;
   height: 30px;
-  padding: 5px 0;
+  padding:0;
   text-decoration: none;
   color: inherit;
 }
@@ -133,30 +140,23 @@ body {
   text-decoration: none;
   color: inherit;
 }
-.navigation-sub-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0 ;
-  padding: 0;
-}
 
 .navigation-list {
+  display: flex;
+  justify-content: space-between;
   font-family:"Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 30px;
   width: 471px;
-  margin: 0 0 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 0 ;
+  padding: 0;
   list-style: none;
 }
 .navigation-item {
-  height: 21px;
-  padding: 14px 0;
+  margin: 0;
+  padding: 0;
 }
 
 .button {
@@ -171,12 +171,16 @@ body {
   border: none;
 
 }
+.button-navigation {
+  background-color: transparent;
+
+}
 .catalog-button {
   max-width: 293px;
   height: 20px;
   padding: 15px 57px 15px 0;
   text-align: left;
-  background-color: #FFE17F;
+  background-color: transparent;
 }
 .search-button {
   width: 157px;
@@ -185,13 +189,11 @@ body {
   border: 2px solid #000000;
   border-left: 0;
   border-radius: 0 20px 20px 0;
-  margin: 46px 0 80px 0;
+  margin: 0;
   padding: 0;
-  background-color: #FFE17F;
+  background-color: transparent;
  }
- .button-navigation {
-  background-color: #FFE17F;
- }
+
 .button-yellow {
   color: #FFE17F;
   background-color: #000000;
@@ -221,7 +223,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  outline: 6px solid red;
+  outline: 2px solid blueviolet;
 }
 
 
