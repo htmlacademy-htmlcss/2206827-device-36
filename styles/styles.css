@@ -44,7 +44,8 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: plum;
+  min-width: 1440px;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -57,23 +58,20 @@ body {
   width: 1160px;
   height: 300px;
   margin:0 auto;
-  background-color: transparent;
+  background-color: #FFE17F;
+  z-index: 100;
 
 }
 .header-index::before {
   position: absolute;
   content: "";
-  margin-top: -40px;
-  background-color: #FFE17F;
-
 }
 .container-header {
   display: flex;
   flex-direction: column;
   padding: 0 60px;
   margin: 0;
-  margin-top: 0px;
-  outline: 2px solid red;
+  margin-top: 0;
 
 }
 .logo-device {
@@ -84,7 +82,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  outline: 2px solid blue;
+
 }
 .navigation-wrapper {
   display: flex;
@@ -169,6 +167,8 @@ body {
   cursor: pointer;
   padding: 0;
   border: none;
+  text-decoration: none;
+  color: #000000;
 
 }
 .button-navigation {
@@ -202,6 +202,7 @@ body {
 /*main*/
 
 .main-index {
+  z-index: 200;
   display: flex;
   flex-direction: column;
   width: 1160px;
@@ -213,9 +214,10 @@ body {
 .hero {
   display: flex;
   flex-direction: column;
+  width: 100%;
   margin: 0;
   padding: 0;
-  outline: 2px solid green;
+
 }
 .slider {
   display: flex;
@@ -225,18 +227,48 @@ body {
   padding: 0;
   outline: 2px solid blueviolet;
 }
+.slider-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.slider-item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.slider-image {
+  display: block;
+}
+.slider-info {
+  display:flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 40px;
+}
+.slider-number {
+  font-family:"Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: right;
 
-
+}
+.slider-item-sub {
+  display: none;
+}
 .slider-button {
   width: 20px;
   height: 60px;
   color: #000000;
-  background-color: #FFFFFF;
   border: none;
   cursor: pointer;
   background-image: url("../images/slide-next.svg");
   background-position: center;
   background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .slider-prev {
@@ -266,18 +298,7 @@ body {
 .slider-pagination-button:hover {
   background-color: #E5E5E5;
 }
-/*пока скрою
-.slider-pagination-button:focus {
-  border-radius: 0;
-  border: 2px solid #AF4FFF;
-  background-color: #FFFFFF;
-  outline: none;
 
-}
-.slider-pagination-button:active {
-  opacity: 0.3;
-}
-*/
 .button-current {
   background-color: #242424;
 }
