@@ -50,32 +50,36 @@
       </nav>
     </div>
     </header>
-
     <!-- main-->
    <main class="main-index">
-    <div class="main-container">
     <section class="hero">
       <h1 class="main-title visually-hidden">Интернет магазин девайс </h1>
       <!-- слайдер-->
     <section class="slider">
+
       <h2 class="slider-card-title visually-hidden" >популярные товары</h2>
       <ol class="slider-list">
         <li class="slider-item">
           <h3 class="visually-hidden">квадрокоптер </h3>
         <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="квадрокоптер с лазером">
-    <div class="slider-info">
-      <span class="slider-number">01</span>
-      <div class="slider-info-sub">
+    <div class="slider-info-wrapper">
+      <span class="slider-number visually-hidden">01</span>
+      <!--<div class="slider-info-sub">-->
     <b class="slider-promo"> Порхает как бабочка, жалит как пчела!</b>
     <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
     </p>
-    <a class="slider-about  button"  href="#">Подробнее</a>
-        <p><b>800 м </b>
+    <a class="slider-button-about  button"  href="#">Подробнее</a>
+    <div class="slider-info-sub-wrapper">
+        <p class="slider-info">
+          <b>800 м </b>
         <span> дальность полета</span>
-        <b>50 м </b>
-        <span>радиус поражения</span></p>
-      </div>
-      </div>
+      </p>
+        <p class="slider-info"> <b>50 м </b>
+        <span>радиус поражения</span>
+      </p>
+    </div>
+  </div>
+</div>
       </li>
       <li class="slider-item slider-item-sub">
         <h3 class="visually-hidden">Фитнес-браслет</h3>
@@ -83,13 +87,13 @@
           <img class="slider-image" src="images/slider-2.png" width="560" height="560" alt="Фитнес-браслет, на экране которого написано: я вижу, что ты снова ешь">
         </a>
         <!--пока slider-number будет здесь-->
-      <div class="slider-info">
+      <div class="slider-info-wrapper">
       <span class="slider-number">02</span>
       <b class="slider-promo"> Худеем правильно!</b>
       <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
       </p>
       <a class="slider-about   button"  href="#">Подробнее</a>
-         <p> <b>48 часов </b>
+         <p class="slider-info"> <b>48 часов </b>
           <span> Без подзарядки</span></p>
         </div>
         </li>
@@ -98,19 +102,18 @@
           <a class="slider-link-image" href="#" >
             <img class="slider-image" src="images/slider-3.png" width="560" height="560" alt="Селфи-палка в сложенном виде и пример, селфи-палки на триноге">
           </a>
-        <div class="slider-info">
+        <div class="slider-info-wrapper">
           <span class="slider-number">03</span>
         <b class="slider-promo"> Делай селфи, как Бен Стиллер! </b>
         <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
         </p>
         <a class="slider-about   button"  href="#">Подробнее</a>
-           <p> <b>8,5 м </b>
+           <p class="slider-info"> <b>8,5 м </b>
             <span> Длина палки</span></p>
             <p><b>5 кг </b>
             <span>Вес палки</span></p>
             <p><b>Карбон</b>
             <span>Материал</span></p>
-          </div>
           </li>
       </ol>
       <div class="slider-button-wrapper">
@@ -129,7 +132,7 @@
     </li>
     <li class="slider-pagination-item">
       <button class="slider-pagination-button" type="button">
-        <span class="visually-hidden">2 тофар</span>
+        <span class="visually-hidden">2 товар</span>
       </button>
     </li>
     <li class="slider-pagination-item">
@@ -138,6 +141,7 @@
       </button>
     </li>
   </ol>
+
     </section>
     <section class="product-catalog">
       <h2 class="product-catalog-tittle visually-hidden">Каталог товаров</h2>
@@ -261,7 +265,6 @@
     </label>
    </form>
   </article>
-</div>
    </main>
    <footer class="footer">
     <section class="index-footer">
